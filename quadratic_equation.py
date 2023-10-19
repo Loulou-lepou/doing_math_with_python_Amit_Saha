@@ -14,10 +14,7 @@ def validate_input(prompt_string):
     while True:
         try:
             input_num = float(input(prompt_string))
-            if input_num.is_integer():
-                return input_num
-            else:
-                print('Invalid input. Plz enter an integer')
+            return input_num
         except ValueError:
             print('Invalid input. Plz enter an integer')
 
